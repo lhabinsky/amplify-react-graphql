@@ -6,8 +6,12 @@ import reportWebVitals from './reportWebVitals';
 //aws imports
 import { Amplify } from 'aws-amplify';
 import config from './aws-exports';
-Amplify.configure(config);
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
+Amplify.configure(config);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

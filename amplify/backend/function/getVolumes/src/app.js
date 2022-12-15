@@ -29,6 +29,11 @@ app.use(function(req, res, next) {
 /**********************
  * Example get method *
  **********************/
+app.get('/volumes/helloworld', function(req, res) {
+  // Add your code here
+  res.json({success: 'hello world!', url: req.url});
+});
+
 
 app.get('/volumes', function(req, res) {
   // Add your code here
