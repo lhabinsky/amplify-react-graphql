@@ -28,6 +28,7 @@ const App = ({ signOut }) => {
     const apiData = await API.graphql({ query: listNotes });
     const notesFromAPI = apiData.data.listNotes.items;
     setNotes(notesFromAPI);
+    console.log(await API.get("habiapi", "/volumes"));
   }
 
   async function createNote(event) {
@@ -52,6 +53,7 @@ const App = ({ signOut }) => {
       query: deleteNoteMutation,
       variables: { input: { id } },
     });
+
   }
 
   return (

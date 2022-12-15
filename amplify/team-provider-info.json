@@ -16,7 +16,14 @@
         "amplifyreactgraphql3ad023c0": {}
       },
       "api": {
-        "amplifyreactgraphql": {}
+        "amplifyreactgraphql": {},
+        "habiapi": {}
+      },
+      "function": {
+        "getVolumes": {
+          "deploymentBucketName": "amplify-amplify04458ac8c15b4-staging-24542-deployment",
+          "s3Key": "amplify-builds/getVolumes-37466f4152574c4a6472-build.zip"
+        }
       }
     }
   }
